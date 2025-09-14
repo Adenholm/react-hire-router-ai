@@ -1,0 +1,43 @@
+.person-li {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.person-li:hover,
+.person-li:focus-within {
+  background-color: rgb(240, 238, 232);
+}
+
+.person-li img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.person-li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.person-li a:focus {
+  outline: 2px solid #888;
+  outline-offset: 2px;
+}
+
+.person-li:nth-child(even) {
+  background-color: #f7f6f3;
+}
